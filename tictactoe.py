@@ -67,23 +67,6 @@ def getAIMove(board, nextMove, aiPlayer):
         
 
 
-'''def getRandomBoard():
-    filledPositions = randint(2, 8)
-    board = [" " for _ in range(9)]
-    r = randint(0, 1)
-    moves = ["X", "O"]
-    nextMove = moves[r]
-    for i in range(filledPositions):
-        pos = randint(0, 8)
-        while(board[pos] != " "):
-            pos = randint(0, 8)
-        board[pos] = nextMove
-        if(nextMove == "X"):
-            nextMove = "O"
-        else:
-            nextMove = "X"
-    return (board, nextMove)'''
-
 def printBoard(board):
     print("\n")
     for i in range(9):
